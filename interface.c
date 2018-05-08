@@ -2385,9 +2385,9 @@ void print_msg_list_history_gw (struct tgl_state *TLSR, void *extra, int success
   print_msg_list_gw (TLSR, extra, success, num, ML);
   if (num > 0) {
     if (tgl_cmp_peer_id (ML[0]->to_id, TLS->our_id)) {
-      tgl_do_messages_mark_read (TLS, ML[0]->to_id, ML[0]->server_id, 0, NULL, NULL);
+      // tgl_do_messages_mark_read (TLS, ML[0]->to_id, ML[0]->server_id, 0, NULL, NULL);
     } else {
-      tgl_do_messages_mark_read (TLS, ML[0]->from_id, ML[0]->server_id, 0, NULL, NULL);
+      // tgl_do_messages_mark_read (TLS, ML[0]->from_id, ML[0]->server_id, 0, NULL, NULL);
     }
   }
 }
